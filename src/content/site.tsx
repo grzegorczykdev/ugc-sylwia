@@ -8,7 +8,7 @@ import workCar from "@/assets/work-car.jpg";
 import workPlush from "@/assets/work-plush.jpg";
 import workSand from "@/assets/work-sand.jpg";
 import galleryCoffee from "@/assets/gallery-coffee.jpg";
-import gallerySylwia2 from "@/assets/photo-sylwia-2.jpg";
+import gallerySylwia2 from "@/assets/photo-sylwia-2.JPG";
 import { ReactNode } from "react";
 
 export interface SiteImage {
