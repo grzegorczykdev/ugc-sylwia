@@ -120,7 +120,7 @@ export function VideoShowcase() {
   });
 
   return (
-    <section id="portfolio" aria-labelledby="video-title" className="bg-paper">
+    <section id="mywork" aria-labelledby="video-title" className="bg-paper">
       <div className="container-site py-20 md:py-28">
         <Reveal>
           <SectionHeading id="video-title" title="Portfolio" script="Featured Videos" />
