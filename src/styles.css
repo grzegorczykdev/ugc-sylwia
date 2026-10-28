@@ -1,0 +1,247 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Dancing Script - deklaracje fontów z /fonts/static/ */
+@font-face {
+  font-family: "Dancing Script";
+  src: url("/fonts/static/DancingScript-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("/fonts/static/DancingScript-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("/fonts/static/DancingScript-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("/fonts/static/DancingScript-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*
+ * Design system - "Wine & Linen" editorial UGC portfolio.
+ *
+ * The @theme inline block maps CSS custom properties to Tailwind utility
+ * classes (e.g. --color-primary -> bg-primary, text-primary).
+ * All colors MUST use oklch format.
+ */
+
+@theme inline {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", "Didot", Georgia, serif;
+  --font-script: "Dancing Script", "Pinyon Script", "Snell Roundhand", cursive;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+
+  /* Editorial palette */
+  --color-wine-deep: var(--wine-deep);
+  --color-paper: var(--paper);
+  --color-paper-border: var(--paper-border);
+  --color-ink: var(--ink);
+  --color-blush: var(--blush);
+  --color-kraft: var(--kraft);
+  --color-tape: var(--tape);
+  --color-wire: var(--wire);
+  --color-on-wine-muted: var(--on-wine-muted);
+
+  --shadow-paper: var(--shadow-paper-value);
+  --shadow-lift: var(--shadow-lift-value);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* Linen cream base, warm charcoal ink, deep wine accent */
+  --background: rgb(242, 241, 235);
+  --foreground: oklch(0.26 0.012 45);
+  --card: oklch(0.99 0.004 85);
+  --card-foreground: oklch(0.26 0.012 45);
+  --popover: oklch(0.99 0.004 85);
+  --popover-foreground: oklch(0.26 0.012 45);
+  --primary: rgb(102, 7, 7);
+
+  --primary-foreground: oklch(0.97 0.01 80);
+  --secondary: oklch(0.92 0.012 80);
+  --secondary-foreground: oklch(0.26 0.012 45);
+  --muted: oklch(0.92 0.01 80);
+  --muted-foreground: oklch(0.45 0.015 45);
+  --accent: oklch(0.86 0.035 20);
+  --accent-foreground: oklch(0.3 0.1 22);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --border: oklch(0.87 0.014 70);
+  --input: oklch(0.87 0.014 70);
+  --ring: oklch(0.36 0.125 22);
+
+  --wine-deep: oklch(0.29 0.105 22);
+  --paper: oklch(0.985 0.005 85);
+  --paper-border: oklch(0.86 0.015 70 / 60%);
+  --ink: oklch(0.18 0.006 45);
+  --blush: oklch(0.85 0.032 18);
+  --kraft: oklch(0.74 0.06 70);
+  --tape: oklch(0.93 0.02 85 / 75%);
+  --wire: oklch(0.78 0.005 80);
+  --on-wine-muted: oklch(0.88 0.03 25);
+
+  --shadow-paper-value:
+    0 1px 2px oklch(0.2 0.02 40 / 8%), 0 8px 24px -12px oklch(0.2 0.02 40 / 25%);
+  --shadow-lift-value: 0 18px 40px -18px oklch(0.15 0.04 25 / 55%);
+
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0.005 85);
+  --sidebar-foreground: oklch(0.26 0.012 45);
+  --sidebar-primary: oklch(0.36 0.125 22);
+  --sidebar-primary-foreground: oklch(0.97 0.01 80);
+  --sidebar-accent: oklch(0.92 0.012 80);
+  --sidebar-accent-foreground: oklch(0.26 0.012 45);
+  --sidebar-border: oklch(0.87 0.014 70);
+  --sidebar-ring: oklch(0.36 0.125 22);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Centered page container */
+@utility container-site {
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  @media (min-width: 768px) {
+    padding-inline: 2rem;
+  }
+}
+
+/* Tracked uppercase micro-label */
+@utility eyebrow {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+/* Crisp paper sheet */
+@utility paper-card {
+  background-color: var(--paper);
+  border: 1px solid var(--paper-border);
+  box-shadow: var(--shadow-paper-value);
+}
+
+/* Translucent washi tape strip */
+@utility tape {
+  background-color: var(--tape);
+  box-shadow: 0 1px 2px oklch(0.2 0.02 40 / 12%);
+  backdrop-filter: blur(1px);
+}
+
+/* 35mm film strip with sprocket holes on both edges */
+@utility film-strip {
+  background-color: var(--ink);
+  background-image:
+    linear-gradient(to bottom, var(--paper) 50%, transparent 50%),
+    linear-gradient(to bottom, var(--paper) 50%, transparent 50%);
+  background-size: 5px 12px;
+  background-position:
+    4px 0,
+    calc(100% - 4px) 0;
+  background-repeat: repeat-y;
+}
+
+/* Infinite ticker */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@utility animate-marquee {
+  animation: marquee 120s linear infinite;
+}
