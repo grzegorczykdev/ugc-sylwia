@@ -237,7 +237,7 @@ export const videoClips: VideoClip[] = [
     meta: "",
     category: "Tech",
     language: "PL",
-    videoSrc: "https://media.sgweblab.com/capcut.mp4",
+    videoSrc: "https://media.sgweblab.com/capcut.mp4#t=0.001",
   },
   {
     id: "gsdgsfg4",
@@ -245,7 +245,7 @@ export const videoClips: VideoClip[] = [
     meta: "",
     category: "Tech",
     language: "PL",
-    videoSrc: "https://media.sgweblab.com/courses.mp4",
+    videoSrc: "https://media.sgweblab.com/courses.mp4#t=0.001",
   },
   {
     id: "clip2",
@@ -253,7 +253,7 @@ export const videoClips: VideoClip[] = [
     meta: "",
     category: "Tech",
     language: "PL",
-    videoSrc: "https://media.sgweblab.com/dji.mp4",
+    videoSrc: "https://media.sgweblab.com/dji.mp4#t=0.001",
   },
   {
     id: "clip3",
@@ -261,7 +261,7 @@ export const videoClips: VideoClip[] = [
     meta: "",
     category: "Tech",
     language: "EN",
-    videoSrc: "https://media.sgweblab.com/notebook.mp4",
+    videoSrc: "https://media.sgweblab.com/notebook.mp4#t=0.001",
   },
   {
     id: "clip4",
@@ -269,7 +269,7 @@ export const videoClips: VideoClip[] = [
     meta: "",
     category: "Tech",
     language: "PL",
-    videoSrc: "https://media.sgweblab.com/preply.mp4",
+    videoSrc: "https://media.sgweblab.com/preply.mp4#t=0.001",
   },
   {
     id: "clip5",
@@ -277,7 +277,7 @@ export const videoClips: VideoClip[] = [
     meta: "",
     category: "Tech",
     language: "EN",
-    videoSrc: "https://media.sgweblab.com/vinted.mp4",
+    videoSrc: "https://media.sgweblab.com/vinted.mp4#t=0.001",
   },
   {
     id: "clip6",
@@ -285,7 +285,7 @@ export const videoClips: VideoClip[] = [
     meta: "",
     category: "Tech",
     language: "PL",
-    videoSrc: "https://media.sgweblab.com/sideshift-1.MP4",
+    videoSrc: "https://media.sgweblab.com/sideshift-1.MP4#t=0.001",
   },
   {
     id: "clip7",
@@ -293,7 +293,7 @@ export const videoClips: VideoClip[] = [
     meta: "",
     category: "Tech",
     language: "PL",
-    videoSrc: "https://media.sgweblab.com/sideshift-2.MP4",
+    videoSrc: "https://media.sgweblab.com/sideshift-2.MP4#t=0.001",
     soundPercentage: 60,
   },
   {
@@ -302,7 +302,7 @@ export const videoClips: VideoClip[] = [
     meta: "",
     category: "Tech",
     language: "PL",
-    videoSrc: "https://media.sgweblab.com/sideshift-3.MP4",
+    videoSrc: "https://media.sgweblab.com/sideshift-3.MP4#t=0.001",
     soundPercentage: 60,
   },
   {
@@ -311,7 +311,7 @@ export const videoClips: VideoClip[] = [
     meta: "",
     category: "Tech",
     language: "PL",
-    videoSrc: "https://media.sgweblab.com/sideshift-4.MP4",
+    videoSrc: "https://media.sgweblab.com/sideshift-4.MP4#t=0.001",
   },
   {
     id: "clip10",
@@ -319,7 +319,7 @@ export const videoClips: VideoClip[] = [
     meta: "",
     category: "Tech",
     language: "PL",
-    videoSrc: "https://media.sgweblab.com/sideshift-5.MP4",
+    videoSrc: "https://media.sgweblab.com/sideshift-5.MP4#t=0.001",
     soundPercentage: 50,
   },
   {
@@ -328,7 +328,7 @@ export const videoClips: VideoClip[] = [
     meta: "",
     category: "Tech",
     language: "PL",
-    videoSrc: "https://media.sgweblab.com/sideshift-6.MP4",
+    videoSrc: "https://media.sgweblab.com/sideshift-6.MP4#t=0.001",
   },
   {
     id: "clip12",
@@ -336,7 +336,7 @@ export const videoClips: VideoClip[] = [
     meta: "",
     category: "Tech",
     language: "PL",
-    videoSrc: "https://media.sgweblab.com/sideshift.MP4",
+    videoSrc: "https://media.sgweblab.com/sideshift.MP4#t=0.001",
   },
 ];
 
