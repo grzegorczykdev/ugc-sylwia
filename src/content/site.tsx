@@ -248,6 +248,14 @@ export const videoClips: VideoClip[] = [
     videoSrc: "https://media.sgweblab.com/courses.mp4#t=0.001",
   },
   {
+    id: "fn3i3jg",
+    title: "Courses",
+    meta: "",
+    category: "Tech",
+    language: "EN",
+    videoSrc: "https://media.sgweblab.com/tricount.mp4#t=0.001",
+  },
+  {
     id: "clip2",
     title: "Product test - DJI",
     meta: "",
