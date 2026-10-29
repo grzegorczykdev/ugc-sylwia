@@ -50,7 +50,7 @@ function CopyEmailButton({ email }: { email: string }) {
 }
 
 const socials = [
-  { label: "TikTok", href: "https://tiktok.com", icon: TikTokIcon },
+  { label: "TikTok", href: "https://www.tiktok.com/@sylwia.techugc", icon: TikTokIcon },
   // { label: "Instagram", href: "https://instagram.com", icon: Instagram },
   // { label: "YouTube", href: "https://youtube.com", icon: Youtube },
   { label: "Email", href: `mailto:${brand.email}`, icon: Mail },

@@ -1,7 +1,7 @@
 import { images } from "@/content/site"; // usunięto końcówkę .tsx
 import { Tape } from "./decor";
 import { Reveal } from "./motion";
-import photoAbout from "@/assets/photo-about.png";
+import photoAbout from "@/assets/4.jpeg";
 
 export function About() {
   return (
@@ -11,7 +11,8 @@ export function About() {
       className="bg-primary text-primary-foreground"
     >
       <div className="container-site grid items-center gap-16 py-20 md:grid-cols-2 md:py-28">
-        <Reveal className="relative mx-auto h-[22rem] w-full max-w-sm sm:h-[26rem]">
+        {/* <Reveal className="relative mx-auto h-[22rem] w-full max-w-sm sm:h-[26rem]"> */}
+        <Reveal className="relative mx-auto h-auto w-full max-w-sm">
           <div className="relative mx-auto flex w-full max-w-sm justify-center lg:max-w-md">
             {/* Ozdobna taśma na górze zdjęcia */}
             <div className="absolute -top-4 left-1/2 z-10 -translate-x-1/2 -rotate-3">
@@ -24,7 +25,7 @@ export function About() {
                 <img
                   src={photoAbout}
                   alt="Sylwia - UGC Creator"
-                  className="size-full object-cover"
+                  className="size-full object-cover object-[40%_65%]"
                   loading="lazy"
                 />
               </div>

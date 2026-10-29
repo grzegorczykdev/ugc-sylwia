@@ -1,9 +1,9 @@
-import heroFlatlay from "@/assets/hero-flatlay.jpg";
+import heroFlatlay from "@/assets/2.jpeg";
 import hairBanner from "@/assets/hair-banner.jpg";
 import SylwiaPortrait from "@/assets/photo-sylwia-4.jpg";
-import serviceSkincare from "@/assets/service-skincare.jpg";
+import contentCreation from "@/assets/8.jpeg";
 import serviceBag from "@/assets/service-bag.jpg";
-import serviceChair from "@/assets/service-chair.jpg";
+import sylwiaTablet from "@/assets/10.jpeg";
 import workCar from "@/assets/work-car.jpg";
 import workPlush from "@/assets/work-plush.jpg";
 import workSand from "@/assets/work-sand.jpg";
@@ -44,14 +44,14 @@ export const images = {
     896,
     1024,
   ),
-  skincare: img(serviceSkincare, "Minimal skincare bottles arranged on cream linen", 768, 960),
+  contentcreation: img(contentCreation, "Sylwia taking a picture of herself", 768, 960),
   bag: img(
     serviceBag,
     "Open black handbag with sunglasses, lipstick and earbuds on a sofa",
     768,
     960,
   ),
-  chair: img(serviceChair, "Woman working on a laptop in a white boucle armchair", 768, 960),
+  chair: img(sylwiaTablet, "Sylwia holding a tablet", 768, 960),
   car: img(workCar, "Iced coffee in a car cup holder with sunlight on beige seats", 720, 1280),
   plush: img(workPlush, "Cream shearling jacket and a soft plush bunny close up", 720, 1280),
   sand: img(workSand, "Straw tote and sunglasses on a linen towel on the sand", 720, 1280),
@@ -122,7 +122,7 @@ export const services: Service[] = [
       "Bilingual delivery available (English & Polish)",
     ],
     price: "From $450",
-    image: images.skincare,
+    image: images.contentcreation,
   },
   {
     number: "02",
@@ -348,7 +348,7 @@ export const galleryImages: SiteImage[] = [
   images.Sylwia,
   images.heroFlatlay,
   images.coffee,
-  images.skincare,
+  images.contentcreation,
   images.sand,
 ];
 

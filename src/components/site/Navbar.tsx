@@ -16,7 +16,7 @@ export function Navbar() {
       >
         <a
           href="#top"
-          className="min-w-0 truncate rounded-sm font-display text-2xl leading-none text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          className="min-w-0 truncate rounded-sm font-script text-2xl leading-none text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         >
           {brand.name}
         </a>

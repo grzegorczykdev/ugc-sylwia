@@ -24,7 +24,7 @@ export function Hero() {
               Creating scroll-stopping, authentic short-form videos across tech, lifestyle, beauty,
               and travel. Content that feels real, matches your brand voice, and genuinely converts.
             </p>
-            <div className="w-full flex gap-2 justify-center">
+            <div className="w-full flex gap-2 justify-center flex-wrap">
               <Button asChild variant="wine" size="pill" className="mt-8">
                 <a href="#contact">Let's work together</a>
               </Button>
@@ -42,13 +42,13 @@ export function Hero() {
                 width={images.heroFlatlay.width}
                 height={images.heroFlatlay.height}
                 fetchPriority="high"
-                className="size-full object-cover"
+                className="size-full object-cover object-[50%_70%] scale-110 -translate-x-[3px]"
               />
             </div>
-            <div className="absolute -bottom-8 -left-4 w-32 -rotate-6 sm:-left-10 sm:w-40">
+            {/* <div className="absolute -bottom-8 -left-4 w-32 -rotate-6 sm:-left-10 sm:w-40">
               <Tape className="-top-3 left-1/2 -translate-x-1/2 rotate-3" />
               <Polaroid image={images.Sylwia} priority />
-            </div>
+            </div> */}
           </Reveal>
         </div>
       </section>
