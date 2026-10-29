@@ -249,7 +249,7 @@ export const videoClips: VideoClip[] = [
   },
   {
     id: "fn3i3jg",
-    title: "Courses",
+    title: "App - Tricount",
     meta: "",
     category: "Tech",
     language: "EN",
